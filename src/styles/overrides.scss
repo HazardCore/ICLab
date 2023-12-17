@@ -1,0 +1,37 @@
+// NO RIPPLE OR GRAY OPACITY ON BUTTONS
+.v-ripple__container {
+    display:none !important;
+}
+.theme--light.v-btn:focus::before {
+    opacity: 0 !important;
+}
+
+
+// Color of helper text on inputs
+.v-messages__message {
+    background-color: #FFF4D7;
+    padding: 4px;
+}
+
+// Color of loaders
+.v-progress-linear.v-progress-linear--absolute.v-progress-linear--visible.theme--light > .v-progress-linear__background.primary {
+    background-color: white !important;
+    opacity: 0 !important;
+}
+.v-progress-linear__indeterminate.long.primary {
+    background-color: none !important;
+    background-image: $border-bottom-gradient-style-1;
+}
+.v-progress-linear__indeterminate.short.primary {
+    background-color: none !important;
+    background-image: $border-bottom-gradient-style-1;
+}
+
+
+// v-btn-group
+.theme--light.v-btn-toggle:not(.v-btn-toggle--group) .v-btn.v-btn.diia-secondary-tab{
+    border-color: black !important;
+}
+.v-btn-toggle > .v-btn.v-btn {
+    opacity: 1 !important;
+}

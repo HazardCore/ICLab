@@ -1,0 +1,42 @@
+// <v-overlay
+//                     absolute
+//                     :value="false"
+//                     opacity="0.8"
+//             >
+//                 <v-progress-circular indeterminate size="64"></v-progress-circular>
+//             </v-overlay>
+//             <h2 class="mb-5">{{ template_detail.name }}</h2>
+//             <v-row>
+//                 <v-col cols=4>
+//                     <template v-if="template_detail.sevdeir_instance_required">
+//                         <v-select label="Середовище СЕВДЕІР" dense v-model="user_form_data['sevdeir_instance']"
+//                                         readonly
+//                                     item-text="display_name" :items="items"
+//                         >
+//                         </v-select>
+//                     </template>
+//                 </v-col>
+//                 <v-col :cols="field.cols ? field.cols : 12" v-for="field in template_fields" :key="field.name">
+//                     <template v-if="field.field_type==='TEXT'">
+//                         <v-text-field :label="field.label" dense v-model="user_form_data[field.name]"
+//                                         readonly item-text="display_name"
+//                         >
+//                         </v-text-field>
+//                     </template>
+//                     <template v-if="field.field_type==='TEXTAREA'">
+//                         <v-textarea :label="field.label" dense v-model="user_form_data[field.name]"
+//                                         readonly item-text="display_name"
+//                         >
+//                         </v-textarea>
+//                     </template>
+//                     <template v-if="field.field_type==='FILE'">
+//                         <a :href="user_form_data[field.name]">{{ field.label }}</a>
+//                     </template>
+//                     <template v-if="field.field_type==='RELATED'">
+//                         <v-autocomplete :label="field.label" v-model="user_form_data[field.name]"
+//                                         readonly :item-text="field.request_field_display" :item-value="field.request_field_value"
+//                         >
+//                         </v-autocomplete>
+//                     </template>
+//                 </v-col>
+//             </v-row>

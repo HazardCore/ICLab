@@ -1,0 +1,50 @@
+<v-container style="max-width: 1680px;" class="pt-0 pb-0 container-side-padding" v-if="info_alert">
+            <v-card
+            fluid
+            elevation="0"
+            class="pt-6 mr-0 pb-0"
+            >
+                <v-alert
+                v-model="info_alert"
+                
+                outlined
+                type="success"
+                icon="mdi-alert"
+                class="ma-0"
+                style="
+                    border-width: 2px !important;
+                    border-color: none !important;
+                    border-image-slice: 1 !important;
+                    border-image-source: linear-gradient(270deg, rgba(171,236,81,1) 0%, rgba(111,242,112,1) 50%, rgba(0,242,46,1) 100%); !important;
+                "
+                dismissible
+            >
+                {{ info_message }}
+            </v-alert>
+            </v-card>
+        </v-container>
+        <v-container style="max-width: 1680px;" class="pt-0 pb-0 container-side-padding" v-if="error_alert">
+            <v-card
+            fluid
+            elevation="0"
+            class="pt-6 mr-0 pb-0"
+            >
+                <v-alert
+                v-model="error_alert"
+                
+                outlined
+                type="error"
+                icon="mdi-alert"
+                class="ma-0"
+                style="
+                    border-width: 2px !important;
+                    border-color: none !important;
+                    border-image-slice: 1 !important;
+                    border-image-source: linear-gradient(90deg, rgba(236,81,81,1) 0%, rgba(242,133,111,1) 50%, rgba(255,154,11,1) 100%); !important;
+                "
+                dismissible
+            >
+                {{ error_message }}
+            </v-alert>
+            </v-card>
+        </v-container>
